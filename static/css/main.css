@@ -1,0 +1,16 @@
+h3{
+	font-weight: bold;
+	font-style: italic;
+	font-size: -webkit-xxx-large;
+
+}
+
+#meal_name{
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+#genre_name{
+	font-size: x-large;
+	font-style: italic;
+}
