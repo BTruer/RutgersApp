@@ -39,89 +39,95 @@
                     </div>
                     <ul class="list-group list-group-flush text-center">
                         {% for i in bc_data['meals']: %}
-                        {% if i['meal_name'] != 'Late Knight': %}
+                        {% if i['meal_avail'] == True: %}
                           <li class="list-group-item" id="meal_name">{{ i['meal_name'] }}</li>
-                          <ul class="list-group">
-                          {% for j in i['genres']: %}
-                            <li class="list-group-item" id="genre_name">{{ j['genre_name'] }}</li>
-                            <ul>
-                              {% for k in j['items']: %}
-                                <li>{{ k }}</li>
-                              {% endfor %}
+                            
+                            <ul class="list-group">
+                            {% for j in i['genres']: %}
+                              <li class="list-group-item" id="genre_name">{{ j['genre_name'] }}</li>
+                              <ul>
+                                {% for k in j['items']: %}
+                                  <li>{{ k }}</li>
+                                {% endfor %}
+                              </ul>
+                            {% endfor%}
                             </ul>
-                          {% endfor%}
-                          </ul>
+                          
                         {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="panel" id="table_bdh" style="display: none;">
                     <div class="panel-heading text-center">
-                        <h3>Busch Dining Hall</h3>
+                      <h3>Busch Dining Hall</h3>
                     </div>
                     <ul class="list-group list-group-flush text-center">
                         {% for i in bdh_data['meals']: %}
-                        {% if i['meal_name'] != 'Late Knight': %}
+                        {% if i['meal_avail'] == True: %}
                           <li class="list-group-item" id="meal_name">{{ i['meal_name'] }}</li>
-                          <ul class="list-group">
-                          {% for j in i['genres']: %}
-                            <li class="list-group-item" id="genre_name">{{ j['genre_name'] }}</li>
-                            <ul>
-                              {% for k in j['items']: %}
-                                <li>{{ k }}</li>
-                              {% endfor %}
-                            </ul>
-                          {% endfor%}
-                          </ul>
+                            
+                            <ul class="list-group">
+                            {% for j in i['genres']: %}
+                              <li class="list-group-item" id="genre_name">{{ j['genre_name'] }}</li>
+                              <ul>
+                                {% for k in j['items']: %}
+                                  <li>{{ k }}</li>
+                                {% endfor %}
+                              </ul>
+                            {% endfor%}
+                            </ul>              
                         {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="panel" id="table_ldc" style="display: none;">
                     <div class="panel-heading text-center">
-                        <h3>Livingston Dining Commons</h3>
+                      <h3>Livingston Dining Commons</h3>
                     </div>
                     <ul class="list-group list-group-flush text-center">
                         {% for i in ldc_data['meals']: %}
-                        {% if i['meal_name'] != 'Late Knight': %}
+                        {% if i['meal_avail'] == True: %}
                           <li class="list-group-item" id="meal_name">{{ i['meal_name'] }}</li>
-                          <ul class="list-group">
-                          {% for j in i['genres']: %}
-                            <li class="list-group-item" id="genre_name">{{ j['genre_name'] }}</li>
-                            <ul>
-                              {% for k in j['items']: %}
-                                <li>{{ k }}</li>
-                              {% endfor %}
+                            
+                            <ul class="list-group">
+                            {% for j in i['genres']: %}
+                              <li class="list-group-item" id="genre_name">{{ j['genre_name'] }}</li>
+                              <ul>
+                                {% for k in j['items']: %}
+                                  <li>{{ k }}</li>
+                                {% endfor %}
+                              </ul>
+                            {% endfor%}
                             </ul>
-                          {% endfor%}
-                          </ul>
+                          
                         {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="panel" id="table_ndh" style="display: none;">
                     <div class="panel-heading text-center">
-                        <h3>Neilson Dining Hall</h3>
+                      <h3>Neilson Dining Hall</h3>
                     </div>
                     <ul class="list-group list-group-flush text-center">
                         {% for i in ndh_data['meals']: %}
-                        {% if i['meal_name'] != 'Late Knight': %}
+                        {% if i['meal_avail'] == True: %}
                           <li class="list-group-item" id="meal_name">{{ i['meal_name'] }}</li>
-                          <ul class="list-group">
-                          {% for j in i['genres']: %}
-                            <li class="list-group-item" id="genre_name">{{ j['genre_name'] }}</li>
-                            <ul>
-                              {% for k in j['items']: %}
-                                <li>{{ k }}</li>
-                              {% endfor %}
+                            
+                            <ul class="list-group">
+                            {% for j in i['genres']: %}
+                              <li class="list-group-item" id="genre_name">{{ j['genre_name'] }}</li>
+                              <ul>
+                                {% for k in j['items']: %}
+                                  <li>{{ k }}</li>
+                                {% endfor %}
+                              </ul>
+                            {% endfor%}
                             </ul>
-                          {% endfor%}
-                          </ul>
+                          
                         {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
-                
             </div>
         </div>
     </div>

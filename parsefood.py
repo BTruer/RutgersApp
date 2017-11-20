@@ -3,14 +3,15 @@ def parsefood():
 	f = open('food1.txt','r')
 	d = json.loads(f.read())
 	for i in d[0]['meals']:
-		print('\n---'+i['meal_name']+'---\n')
-		if i['meal_avail'] is True:
-			for j in i['genres']:
-				print()
-				print(j['genre_name'])
-				print('-------------')
-				for k in j['items']:
-					print(k)
+		if i['meal_name'] != 'Late Knight':
+			print('\n---'+i['meal_name']+'---\n')
+			if i['meal_avail'] is True:
+				for j in i['genres']:
+					print()
+					print(j['genre_name'])
+					print('-------------')
+					for k in j['items']:
+						print(k)
 
 
 '''
